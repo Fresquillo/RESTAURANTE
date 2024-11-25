@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RESTAURANTE</string>
+    <string name="nombreRestaurante">Taberna Manolo</string>
+    <string name="dosPersonas">2 personas</string>
+    <string name="cuatroPesonas">4 personas</string>
+    <string name="ochoPersonas">8 personas</string>
+    <string name="introducirNombre">Introduce tu nombre</string>
+    <string name="hora">20:00</string>
+    <string name="horaDos">21:00</string>
+    <string name="horaTres">22:00</string>
+    <string name="cita">Hola %s, tu cita es a las %s y has reservado una mesa de %d comensales</string>
+</resources>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu"
+    android:background="@color/azul_oscuro">
+
+        <TextView
+            android:id="@+id/nombreRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="@string/nombreRestaurante"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/textos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="@+id/nombreRestaurante"
+            app:layout_constraintTop_toBottomOf="@+id/nombreRestaurante"
+            app:cardCornerRadius="35dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/fondoElementos">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mesa"
+                    app:tint="@color/black"
+                    android:id="@+id/mesa1"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/dosPersonas"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:textStyle="bold">
+                </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toEndOf="@+id/card1"
+            app:layout_constraintTop_toBottomOf="@+id/nombreRestaurante"
+            app:cardCornerRadius="35dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/fondoElementos">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mesa"
+                    app:tint="@color/black"
+                    android:id="@+id/mesa2"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:padding="10dp"
+                    android:text="@string/cuatroPesonas"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+                </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toEndOf="@+id/card2"
+            app:layout_constraintTop_toBottomOf="@+id/nombreRestaurante"
+            app:cardCornerRadius="35dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/fondoElementos">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mesa"
+                    app:tint="@color/black"
+                    android:id="@+id/mesa3"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/ochoPersonas"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:textStyle="bold">
+                </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="@+id/card1"
+            app:layout_constraintEnd_toEndOf="@id/card3"
+            app:layout_constraintTop_toBottomOf="@+id/card1"
+            android:id="@+id/textView"
+            android:text="@string/introducirNombre"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="@color/textos"
+            >
+        </TextView>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintEnd_toEndOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            android:background="@color/fondoElementos"
+            android:hint="@string/introducirNombre"
+            >
+        </EditText>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/card1"
+            app:layout_constraintEnd_toEndOf="@id/card3"
+            app:layout_constraintTop_toBottomOf="@id/editText"
+            app:cardCornerRadius="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/fondoElementos">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="220dp"
+                    android:id="@+id/fabUno">
+
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/derecha"
+                    android:id="@+id/fabUno"
+                    android:elevation="12dp"
+                    android:layout_marginLeft="220dp">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/hora"
+                    android:gravity="center"
+                    android:textSize="40dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/fabDos">
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/izquierda"
+                    android:id="@+id/izquierda"
+                    android:elevation="12dp">
+                </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/card3"
+            app:layout_constraintEnd_toEndOf="@id/card3"
+            app:layout_constraintTop_toBottomOf="@id/editText"
+            android:id="@+id/fabTres"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="50dp">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/check"
+            app:layout_constraintStart_toStartOf="@id/fabTres"
+            app:layout_constraintEnd_toEndOf="@id/fabTres"
+            app:layout_constraintTop_toTopOf="@id/fabTres"
+            android:id="@+id/check"
+            android:elevation="12dp">
+        </ImageView>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
